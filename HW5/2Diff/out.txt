@@ -1,0 +1,14 @@
+9a10,14
+> 
+> 
+> # This is a new common that I added!
+> 
+> 
+43c48
+<         j=int((3*i/4)+o)    
+---
+>         j=int((2*i/4)+o)    
+50c55
+< #pvals[X//32,Y//20,:] = 0xff
+---
+> 

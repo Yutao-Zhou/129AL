@@ -1,0 +1,45 @@
+String with at least 3 words: First
+second
+Third
+First 3 Characters: Fir
+Last 3 Characters: ird
+First half of the string: First sec
+Last half of the string: ond Third
+Reversed words: Third second First
+Alphabetized words First Third second
+F
+i
+r
+s
+t
+ 
+s
+e
+c
+o
+n
+d
+ 
+T
+h
+i
+r
+d
+0x46
+0x69
+0x72
+0x73
+0x74
+0x20
+0x73
+0x65
+0x63
+0x6f
+0x6e
+0x64
+0x20
+0x54
+0x68
+0x69
+0x72
+0x64

@@ -1,0 +1,10 @@
+Enter string: It Works! Have a nice day!
+It Works! Have a nice day!
+It Works! Have a nice day!
+It Works! Have a nice day!
+It Works! Have a nice day!
+It Works! Have a nice day!
+It Works! Have a nice day!
+It Works! Have a nice day!
+It Works! Have a nice day!
+It Works! Have a nice day!

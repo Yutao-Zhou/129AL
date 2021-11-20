@@ -1,0 +1,9 @@
+The average of pass statement: 2.430129999999906e-08
+The average of addition of two float variables: 1.6198643999999832e-07
+The average of multiplication of two float variables: 1.6936383000000034e-07
+The average of division of two float variables: 1.6886490999999922e-07
+The average of division of two integer variables: 2.3916649000000235e-07
+The average of appending one number to a list: 7.878444000000116e-08
+The average of appending a long list: 2.1311278999999957e-07
+The average of call a function that does nothing: 7.70340200000021e-08
+The average of call to a function that add two float variables: 2.1833162000000074e-07

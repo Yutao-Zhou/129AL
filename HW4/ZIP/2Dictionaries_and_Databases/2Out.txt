@@ -1,0 +1,14 @@
+Here are the keys: dict_keys(['Last name', 'First name', 'Favorite color', 'Favorite food', 'Favorite field of Physics', 'Most admired physicst'])
+Choose a key please(q to quit):
+
+
+"Allen, Braun:  Blue
+"Brodie, Frye:  Red
+"Sam, Hicks:  Yellow
+Choose a key please(q to quit):Choose a key please(q to quit):
+
+
+"Allen, Braun:  Braun
+"Brodie, Frye:  Frye
+"Sam, Hicks:  Hicks
+Choose a key please(q to quit):

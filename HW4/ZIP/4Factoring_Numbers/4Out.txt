@@ -1,0 +1,7 @@
+
+Please enter an integer: Your input was not greater than 0, try again!
+Please enter an integer: 
+The primeFactors are: 
+2839301
+3479687.0
+

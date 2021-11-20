@@ -1,0 +1,63 @@
+#part a:
+
+I searched forks. And the first time it appear is when it forks
+
+
+
+111   read(3, "#part a\n# When I use 'python3 -i' to 'import os' and run:'os.execv(\"/bin/ls\", [\"ls\", \"-l\"])', it will return the\n# same 'ls -l' result in the current directory. It will quit python and return to Linux at the same time.\n# This is interesting becaue usually "..., 512) = 512
+# This is reading my common
+111   lseek(3, 0, SEEK_SET)             = 0
+# It is looking for the next line
+111   brk(0xc6f000)                     = 0xc6f000
+# It is moving out of this memory location
+111   read(3, "#part a\n# When I use 'python3 -i' to 'import os' and run:'os.execv(\"/bin/ls\", [\"ls\", \"-l\"])', it will return the\n# same 'ls -l' result in the current directory. It will quit python and return to Linux at the same time.\n# This is interesting becaue usually "..., 512) = 512
+# This is reading my common
+111   read(3, "v' is replacing the initial program with ls -l. (in part b it replace child program with ls -l and then terminate it)\n# This is why it return to the parent program, which is counting in part b, after it give the ls -l.\n# Also, this is why we have finite th"..., 512) = 512
+# This is reading my common
+111   read(3, ".sleep(0.5)\n    if c%10==0:\n        print('I am about to fork!')\n        retval = os.fork()\n        child = (retval == 0)\n        # os.execv(\"/bin/ls\", [\"ls\", \"-l\"])\n        \n        if child:\n            print('I am about to execute ls:')\n            os.e"..., 512) = 286
+# This is reading my code
+111   read(3, "", 512)                  = 0
+# This is reading an emepty line
+111   brk(0xc65000)                     = 0xc65000
+# It is moving out of this memory location
+111   brk(0xc63000)                     = 0xc63000
+# It is moving out of this memory location
+111   close(3)                          = 0
+# Is closing this program with processid 3
+111   write(1, "1\n", 2)                = 2
+#This is the first time it print out C where C is 1 and the \n is a new line.
+
+#part b:
+
+I looked for execv first. I realized it execved pretty early and it is doing a lot of ls things. So, I asked joe. Here I showned where it really exits. It exit after it print out the result of the ls.
+
+112   close(3)                          = 0
+# This is closing the program that get result for ls.
+112   clock_gettime(CLOCK_REALTIME, {tv_sec=1615336757, tv_nsec=467933600}) = 0
+# This is getting the time where it is useful to translate the time in the ls process before to
+# the human readable time as shown below.
+112   write(1, "-rwxrwxrwx 1 yutao yutao   1310 Mar  9 16:36 1System.py\n", 56) = 56
+# This is printing out the result of ls
+112   write(1, "-rwxrwxrwx 1 yutao yutao 135997 Mar  9 16:39 tr\n", 48) = 48
+# This is printing out the result of ls
+112   write(1, "-rwxrwxrwx 1 yutao yutao    372 May 24  2018 trp\n", 49) = 49
+# This is printing out the result of ls
+112   close(1)                          = 0
+# This close (1) is closing the child process.
+
+
+#part c:
+
+The partent process exit after the child process exit. They exit after it print out the result of the ls.
+
+
+112   write(1, "-rwxrwxrwx 1 yutao yutao   1310 Mar  9 16:36 1System.py\n", 56) = 56
+# This is printing out the result of ls
+112   write(1, "-rwxrwxrwx 1 yutao yutao 135997 Mar  9 16:39 tr\n", 48) = 48
+# This is printing out the result of ls
+112   write(1, "-rwxrwxrwx 1 yutao yutao    372 May 24  2018 trp\n", 49) = 49
+# This is printing out the result of ls
+112   close(1)                          = 0
+# This close (1) is closing the child process.
+112   close(2)                          = 0
+# This is closing the parent process after the child process been closed.
